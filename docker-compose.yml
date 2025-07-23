@@ -8,7 +8,8 @@ services:
     volumes:
       - .:/app
     environment:
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/mydatabase
+#      - DATABASE_URL=postgresql://postgres:postgres@db:5432/mydatabase
+      - DATABASE_URL=postgresql://flask_docker_db_user:mEaADj4DREgfAxoSZUqhHf89Xg0U2Kaz@dpg-d20fbevgi27c73ciacug-a/flask_docker_db
     depends_on:
       - db
 
